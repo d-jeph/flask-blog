@@ -6,6 +6,8 @@
   {% else %}
   <title>Welcome to Microblog</title>
   {% endif %}
+
+  
 </head>
 
 <body>
@@ -31,6 +33,10 @@
   {% endwith %}
 
   {% block content %} {% endblock %}
+
+  {{ moment.include_jquery() }}
+  {{ moment.include_moment() }}
+
 </body>
 
 </html>
